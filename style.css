@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand&family=Triodion&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+  background-color: #6e14d4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+.continer{
+    margin:  0px 7rem;
+    height: 100%;
+    z-index: 999;
+
+}
+#home{
+    height: 100vh;
+    background:#6e14d4;
+    color: #ffffff;
+   background-position: fixed;
+   
+}
+nav .logo{
+    width: 70px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0px ;
+
+}
+a{
+    text-decoration: none;
+    text-align: center;
+}
+.nav a:hover{
+    color: red;
+    background-color: black;
+}
+ul{
+    list-style:none ;
+}
+nav ul{
+    display: flex;
+align-items: center;
+}
+nav ul a{
+color: #ffffff;
+padding: 20px;
+}
+#home .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+}
+#home .content img{
+    width: 270px;
+    margin-left: 200px;
+    animation: animation1 1s ease-out;
+}
+#home .content .content-text h1{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+#home .content .content-text h1 span{
+    font-size: 50px;
+}
+#home .content .content-text p{
+    font-weight: 300ox;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+.btn{
+    font-size: 14px;
+    padding: 10px 20px;
+    background-color: #ffffff ;
+    border-radius: 30px;
+    color: black;
+}
+.btn:hover{
+color: #6e14d4;
+border: 1px solid #ffffff;
+}
+.so{
+    margin-left:3rem ;
+    animation: animation1 1s ease-out;
+}
+.so i{
+     font-size: 25px;
+    margin: 10px 0px;
+    color: #ffffff;
+
+}
+.so i:hover{
+color: rgb(42, 99, 165);
+
+}
+#home .continer ul a:hover{
+color: red;
+
+}
+.pic{
+    width: 180px;
+ display: block;  
+  margin: auto;
+}
+
+@keyframes animation1{
+    0%{
+        transform: translatex(500px);
+    }
+    100%{
+        transform: translatex(0);
+    }
+}
+@media (max-width: 900px){
+    .continer{
+        margin: 0 1rem;
+    }
+    nav ul a{
+        padding: 20px;
+    }
+    #home .content{
+      
+        flex-direction: column;
+        text-align: center;
+    }
+}
